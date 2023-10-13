@@ -1,0 +1,560 @@
+2023-10-04 09:10:46.7379||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 09:10:46.7649||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 09:10:46.7649||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 09:10:46.7649||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 09:10:46.7649||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 09:10:47.3585||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 09:10:47.5169||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 159.7944ms 
+2023-10-04 09:10:47.5169||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 09:10:47.5169||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 09:10:47.5440||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 20.4918ms 
+2023-10-04 09:10:47.5440||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 25.5248ms 
+2023-10-04 09:10:47.5841||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 09:10:47.6611||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.9376ms 
+2023-10-04 09:14:05.3433||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 09:14:05.3660||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 09:14:05.3660||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 09:14:05.3660||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 09:14:05.3660||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 09:14:05.9853||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 09:14:06.1715||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 09:14:06.1715||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 09:14:06.1787||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 188.4385ms 
+2023-10-04 09:14:06.1977||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 25.7684ms 
+2023-10-04 09:14:06.2082||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 36.6516ms 
+2023-10-04 09:14:06.3071||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 09:14:06.4109||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 103.8366ms 
+2023-10-04 09:14:45.2125||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/Category/GetCategories - - 
+2023-10-04 09:14:45.2410||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api)' 
+2023-10-04 09:14:45.2691||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Stock.Model.Category]]] GetCategories() on controller Stock.Api.Controllers.CategoryController (Stock.Api). 
+2023-10-04 09:14:46.2108||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 09:14:46.4545||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api) - Validation state: Valid 
+2023-10-04 09:14:47.1833||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (49ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryName]
+FROM [tblCategory] AS [t] 
+2023-10-04 09:14:47.2445||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 784.858ms. 
+2023-10-04 09:14:47.2548||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Stock.Model.Category, Stock.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-10-04 09:14:47.2690||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api) in 1995.3696ms 
+2023-10-04 09:14:47.2690||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api)' 
+2023-10-04 09:14:47.2805||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/api/Category/GetCategories - - - 200 - application/json;+charset=utf-8 2068.0955ms 
+2023-10-04 09:16:01.7361||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/1.1 GET https://localhost:7177/api/Category/GetCategories - - 
+2023-10-04 09:16:01.7585||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api)' 
+2023-10-04 09:16:01.7585||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCategories", controller = "Category"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Stock.Model.Category]]] GetCategories() on controller Stock.Api.Controllers.CategoryController (Stock.Api). 
+2023-10-04 09:16:01.8889||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api) - Validation state: Valid 
+2023-10-04 09:16:01.9039||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (8ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CategoryName]
+FROM [tblCategory] AS [t] 
+2023-10-04 09:16:01.9039||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 16.2937ms. 
+2023-10-04 09:16:01.9039||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[Stock.Model.Category, Stock.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-10-04 09:16:01.9238||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api) in 163.2711ms 
+2023-10-04 09:16:01.9238||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CategoryController.GetCategories (Stock.Api)' 
+2023-10-04 09:16:01.9238||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/1.1 GET https://localhost:7177/api/Category/GetCategories - - - 200 - application/json;+charset=utf-8 189.8434ms 
+2023-10-04 09:28:00.2565||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 09:28:00.2803||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 09:28:00.2803||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 09:28:00.2803||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 09:28:00.2803||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 09:28:00.7727||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 09:28:00.9591||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 188.0970ms 
+2023-10-04 09:28:00.9682||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 09:28:00.9682||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 09:28:00.9824||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 14.0373ms 
+2023-10-04 09:28:00.9824||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.9256ms 
+2023-10-04 09:28:01.0264||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 09:28:01.0948||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 68.3976ms 
+2023-10-04 09:28:59.1398||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 09:28:59.1646||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 09:28:59.1646||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 09:28:59.1646||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 09:28:59.1646||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 09:28:59.9439||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 09:29:00.1091||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 166.9813ms 
+2023-10-04 09:29:00.1091||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 09:29:00.1091||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 09:29:00.1255||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 10.1414ms 
+2023-10-04 09:29:00.1377||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.3782ms 
+2023-10-04 09:29:00.1785||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 09:29:00.2485||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.9858ms 
+2023-10-04 09:29:21.4609||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7177/api/User/Register application/json 241 
+2023-10-04 09:29:21.4863||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.UserController.RegisterUser (Stock.Api)' 
+2023-10-04 09:29:21.5381||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Stock.Model.User]] RegisterUser(Stock.Model.User) on controller Stock.Api.Controllers.UserController (Stock.Api). 
+2023-10-04 09:29:22.5535||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 09:29:22.7934||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.UserController.RegisterUser (Stock.Api) in 1250.3645ms 
+2023-10-04 09:29:22.7934||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.UserController.RegisterUser (Stock.Api)' 
+2023-10-04 09:29:22.7934||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'Stock.Repository.UserRepository' while attempting to activate 'Stock.Api.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-04 09:29:22.8240||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7177/api/User/Register application/json 241 - 500 - text/plain;+charset=utf-8 1363.3574ms 
+2023-10-04 09:40:14.4611||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 09:40:14.4848||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 09:40:14.4848||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 09:40:14.4848||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 09:40:14.4848||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 09:40:14.8536||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 09:40:15.0217||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 169.2047ms 
+2023-10-04 09:40:15.0217||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 09:40:15.0217||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 09:40:15.0431||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 13.0553ms 
+2023-10-04 09:40:15.0621||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 32.3080ms 
+2023-10-04 09:40:15.1016||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 09:40:15.1712||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 69.5458ms 
+2023-10-04 09:40:40.6034||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7177/api/User/Register application/json 90 
+2023-10-04 09:40:40.6349||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.UserController.RegisterUser (Stock.Api)' 
+2023-10-04 09:40:40.6836||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "RegisterUser", controller = "User"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Stock.Model.User]] RegisterUser(Stock.Model.User) on controller Stock.Api.Controllers.UserController (Stock.Api). 
+2023-10-04 09:40:41.7946||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 09:40:42.0179||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.UserController.RegisterUser (Stock.Api) in 1328.8533ms 
+2023-10-04 09:40:42.0202||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.UserController.RegisterUser (Stock.Api)' 
+2023-10-04 09:40:42.0202||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.InvalidOperationException: Unable to resolve service for type 'Stock.Repository.UserRepository' while attempting to activate 'Stock.Api.Controllers.UserController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.GetService(IServiceProvider sp, Type type, Type requiredBy, Boolean isDefaultParameterRequired)
+   at lambda_method9(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-04 09:40:42.0419||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7177/api/User/Register application/json 90 - 500 - text/plain;+charset=utf-8 1438.7994ms 
+2023-10-04 09:53:40.1937||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 09:53:40.2222||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|Creating key {27b26cf3-5fd5-4aa0-aa57-48d960060765} with creation date 2023-10-04 06:53:40Z, activation date 2023-10-04 06:53:40Z, and expiration date 2024-01-02 06:53:40Z. 
+2023-10-04 09:53:40.2384||INFO|Microsoft.AspNetCore.DataProtection.Repositories.FileSystemXmlRepository|Writing data to file 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys\key-27b26cf3-5fd5-4aa0-aa57-48d960060765.xml'. 
+2023-10-04 09:53:40.3801||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 09:53:40.3801||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 09:53:40.3801||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 09:53:40.3801||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 09:53:40.3801||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 09:53:40.9196||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 09:53:42.2918||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 1372.9814ms 
+2023-10-04 09:53:42.2984||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 09:53:42.2984||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 09:53:42.2984||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 13.6010ms 
+2023-10-04 09:53:42.3176||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 19.1943ms 
+2023-10-04 09:53:42.3560||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 09:53:42.4342||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 78.2608ms 
+2023-10-04 09:54:30.4441||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 POST https://localhost:7177/api/Auth/Login application/json 56 
+2023-10-04 09:54:30.4902||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.AuthController.Login (Stock.Api)' 
+2023-10-04 09:54:30.5308||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Object Login(System.Object) on controller Stock.Api.Controllers.AuthController (Stock.Api). 
+2023-10-04 09:54:31.7135||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 09:54:32.0696||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.AuthController.Login (Stock.Api) - Validation state: Valid 
+2023-10-04 09:54:33.6225||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (60ms) [Parameters=[@__userEmail_0='?' (Size = 4000), @__password_1='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[CompanyUnitId], [t].[Password], [t].[RoleId], [t].[UserEmail], [t].[UserFullName]
+FROM [tblUser] AS [t]
+WHERE [t].[UserEmail] = @__userEmail_0 AND [t].[Password] = @__password_1 
+2023-10-04 09:54:33.6970||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (5ms) [Parameters=[@__item_RoleId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(2) [t].[Id], [t].[RoleName]
+FROM [tblRole] AS [t]
+WHERE [t].[Id] = @__item_RoleId_0 
+2023-10-04 09:54:33.8405||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Stock.Api.Controllers.AuthController.Login (Stock.Api), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 1766.3556ms. 
+2023-10-04 09:54:33.8405||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing ObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2023-10-04 09:54:33.8592||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.AuthController.Login (Stock.Api) in 3323.8509ms 
+2023-10-04 09:54:33.8592||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.AuthController.Login (Stock.Api)' 
+2023-10-04 09:54:33.8592||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 POST https://localhost:7177/api/Auth/Login application/json 56 - 200 - application/json;+charset=utf-8 3429.1930ms 
+2023-10-04 14:17:57.3245||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 14:17:57.4978||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 14:17:57.4978||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 14:17:57.4978||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 14:17:57.4978||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 14:17:57.4978||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 14:17:58.3830||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 14:17:59.8673||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 1485.3083ms 
+2023-10-04 14:17:59.8772||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 14:17:59.8772||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 14:17:59.8897||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 12.4119ms 
+2023-10-04 14:17:59.9160||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 38.7570ms 
+2023-10-04 14:17:59.9464||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 14:18:00.0311||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.6477ms 
+2023-10-04 16:59:03.6524||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 16:59:03.8150||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 16:59:03.8150||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 16:59:03.8150||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 16:59:03.8150||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 16:59:03.8150||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 16:59:04.5377||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 16:59:04.8182||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 16:59:04.8182||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 16:59:04.8325||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 294.9431ms 
+2023-10-04 16:59:04.8445||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 26.2338ms 
+2023-10-04 16:59:04.8921||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 73.8805ms 
+2023-10-04 16:59:04.9350||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 16:59:05.0215||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 86.5849ms 
+2023-10-04 16:59:11.1912||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 16:59:11.1912||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api)' 
+2023-10-04 16:59:11.2133||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartments", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.Object]]] GetCompanyDepartments() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 16:59:11.5946||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 16:59:11.7703||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api) - Validation state: Valid 
+2023-10-04 16:59:12.1927||ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (25ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CompanyId], [t].[DepartmentName], [c].[Id], [c].[CompanyName]
+FROM [tblCompanyDepartment] AS [t]
+INNER JOIN [Company] AS [c] ON [t].[CompanyId] = [c].[Id] 
+2023-10-04 16:59:12.2055||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Stock.Repository.RepositoryContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Company'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:1b7a992d-2fb0-4eb7-9498-f17c0871ebc5
+Error Number:208,State:1,Class:16 Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Company'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:1b7a992d-2fb0-4eb7-9498-f17c0871ebc5
+Error Number:208,State:1,Class:16
+2023-10-04 16:59:12.3980||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api) in 1181.7078ms 
+2023-10-04 16:59:12.3980||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api)' 
+2023-10-04 16:59:12.4015||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid object name 'Company'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__209_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Stock.Repository.CompanyDepartmentRepository.GetCompanyDeparmentsAsync() in C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Repository\CompanyDepartmentRepository.cs:line 20
+   at Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments() in C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api\Controllers\CompanyDepartmentController.cs:line 20
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+ClientConnectionId:1b7a992d-2fb0-4eb7-9498-f17c0871ebc5
+Error Number:208,State:1,Class:16
+2023-10-04 16:59:12.4428||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - - 500 - text/plain;+charset=utf-8 1251.5423ms 
+2023-10-04 17:00:24.2741||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:00:24.4429||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:00:24.4429||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:00:24.4429||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:00:24.4466||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:00:24.4466||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:00:25.0118||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:00:25.2332||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:00:25.2332||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:00:25.2332||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 221.9981ms 
+2023-10-04 17:00:25.2538||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 20.3472ms 
+2023-10-04 17:00:25.2538||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.4461ms 
+2023-10-04 17:00:25.3729||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:00:25.4454||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.5230ms 
+2023-10-04 17:00:28.8565||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:00:28.8565||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api)' 
+2023-10-04 17:00:28.8737||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartments", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Stock.Model.CompanyDepartment]]] GetCompanyDepartments() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:00:29.4225||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:00:29.7366||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api) - Validation state: Valid 
+2023-10-04 17:00:30.4881||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CompanyId], [t].[DepartmentName]
+FROM [tblCompanyDepartment] AS [t] 
+2023-10-04 17:00:30.5170||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Stock.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-04 17:00:30.6246||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api) in 1745.4771ms 
+2023-10-04 17:00:30.6246||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api)' 
+2023-10-04 17:00:30.6246||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Stock.Repository.CompanyDepartmentRepository.GetCompanyDeparmentsAsync() in C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Repository\CompanyDepartmentRepository.cs:line 21
+   at Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments() in C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api\Controllers\CompanyDepartmentController.cs:line 20
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-04 17:00:30.6688||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - - 500 - text/plain;+charset=utf-8 1812.2857ms 
+2023-10-04 17:02:41.1724||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:02:41.3214||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:02:41.3214||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:02:41.3214||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:02:41.3214||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:02:41.3214||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:02:41.6368||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:02:41.8652||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 229.1931ms 
+2023-10-04 17:02:41.8719||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:02:41.8719||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:02:41.8901||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 18.1854ms 
+2023-10-04 17:02:41.8901||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 23.7117ms 
+2023-10-04 17:02:42.0349||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:02:42.1118||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 76.9640ms 
+2023-10-04 17:02:46.5502||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:02:46.5558||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api)' 
+2023-10-04 17:02:46.5558||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartments", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Stock.Model.CompanyDepartment]]] GetCompanyDepartments() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:02:47.1982||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:02:47.4652||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api) - Validation state: Valid 
+2023-10-04 17:02:48.2481||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (55ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CompanyId], [t].[DepartmentName]
+FROM [tblCompanyDepartment] AS [t] 
+2023-10-04 17:02:48.2764||ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'Stock.Repository.RepositoryContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2023-10-04 17:02:48.3980||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api) in 1823.6255ms 
+2023-10-04 17:02:48.4002||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments (Stock.Api)' 
+2023-10-04 17:02:48.4002||ERROR|Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware|An unhandled exception has occurred while executing the request. System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Int32()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetInt32(Int32 i)
+   at lambda_method20(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Stock.Repository.CompanyDepartmentRepository.GetCompanyDeparmentsAsync() in C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Repository\CompanyDepartmentRepository.cs:line 21
+   at Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartments() in C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api\Controllers\CompanyDepartmentController.cs:line 20
+   at lambda_method5(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-10-04 17:02:48.4389||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - - 500 - text/plain;+charset=utf-8 1888.6280ms 
+2023-10-04 17:17:14.6980||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:17:14.8446||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:17:14.8446||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:17:14.8446||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:17:14.8446||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:17:14.8446||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:17:15.2343||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:17:15.4589||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 225.8659ms 
+2023-10-04 17:17:15.4673||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:17:15.4673||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:17:15.4890||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 21.7031ms 
+2023-10-04 17:17:15.4956||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.2241ms 
+2023-10-04 17:17:15.5259||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:17:15.6003||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.3720ms 
+2023-10-04 17:17:19.1618||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:17:19.1618||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:17:19.1794||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartment", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.Object]]] GetCompanyDepartmentAsync() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:17:19.5499||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:17:19.7221||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) - Validation state: Valid 
+2023-10-04 17:17:20.1328||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (23ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CompanyId], [t].[DepartmentName], [t0].[Id], [t0].[CompanyName]
+FROM [tblCompanyDepartment] AS [t]
+INNER JOIN [tblCompany] AS [t0] ON [t].[CompanyId] = [t0].[Id] 
+2023-10-04 17:17:20.1506||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 425.8029ms. 
+2023-10-04 17:17:20.1506||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing NotFoundObjectResult, writing value of type 'System.String'. 
+2023-10-04 17:17:20.1506||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) in 976.7189ms 
+2023-10-04 17:17:20.1506||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:17:20.1655||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - - 404 - text/plain;+charset=utf-8 1003.5946ms 
+2023-10-04 17:17:35.6041||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:17:35.7981||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:17:35.7981||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:17:35.7981||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:17:35.7981||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:17:35.7981||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:17:36.4218||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:17:36.6639||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 243.0243ms 
+2023-10-04 17:17:36.6689||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:17:36.6689||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:17:36.6850||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 16.0704ms 
+2023-10-04 17:17:36.6850||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 22.0242ms 
+2023-10-04 17:17:36.8262||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:17:36.9004||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 74.1868ms 
+2023-10-04 17:17:41.0009||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:17:41.0009||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:17:41.0196||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartment", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.Object]]] GetCompanyDepartmentAsync() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:17:41.3960||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:17:41.5264||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) - Validation state: Valid 
+2023-10-04 17:18:02.6801||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:18:02.8474||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:18:02.8474||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:18:02.8474||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:18:02.8474||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:18:02.8474||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:18:03.3112||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:18:03.5794||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 271.4556ms 
+2023-10-04 17:18:03.5848||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:18:03.5848||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:18:03.5931||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 8.2228ms 
+2023-10-04 17:18:03.5931||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 17.2435ms 
+2023-10-04 17:18:03.7362||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:18:03.8074||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.1955ms 
+2023-10-04 17:18:09.0301||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:18:09.0301||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:18:09.0467||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartment", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.Object]]] GetCompanyDepartmentAsync() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:18:09.7051||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:18:09.9775||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) - Validation state: Valid 
+2023-10-04 17:18:38.4351||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:18:38.6071||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:18:38.6080||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:18:38.6080||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:18:38.6080||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:18:38.6080||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:18:39.0497||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:18:39.2914||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 242.0858ms 
+2023-10-04 17:18:39.2914||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:18:39.2914||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:18:39.2914||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 4.4759ms 
+2023-10-04 17:18:39.3074||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 11.2700ms 
+2023-10-04 17:18:39.4654||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:18:39.5380||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 72.6065ms 
+2023-10-04 17:18:50.7980||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:18:50.9697||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:18:50.9697||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:18:50.9697||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:18:50.9697||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:18:50.9697||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:18:51.4560||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:18:51.6841||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 229.4620ms 
+2023-10-04 17:18:51.6841||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:18:51.6841||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:18:51.7006||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 10.3595ms 
+2023-10-04 17:18:51.7006||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 18.1850ms 
+2023-10-04 17:18:51.7481||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:18:51.8198||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 71.5960ms 
+2023-10-04 17:18:56.2720||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:18:56.2791||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:18:56.2947||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartment", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.Object]]] GetCompanyDepartmentAsync() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:18:56.6636||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:18:56.7957||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) - Validation state: Valid 
+2023-10-04 17:19:11.5131||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (51ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CompanyId], [t].[DepartmentName], [t0].[Id], [t0].[CompanyName]
+FROM [tblCompanyDepartment] AS [t]
+INNER JOIN [tblCompany] AS [t0] ON [t].[CompanyId] = [t0].[Id] 
+2023-10-04 17:20:46.5396||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:20:46.7502||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:20:46.7502||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:20:46.7502||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:20:46.7502||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:20:46.7502||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:20:47.3151||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:20:47.5697||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 255.5366ms 
+2023-10-04 17:20:47.5768||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:20:47.5768||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:20:47.5933||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 16.5044ms 
+2023-10-04 17:20:47.5933||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.5386ms 
+2023-10-04 17:20:47.6438||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:20:47.7279||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.0726ms 
+2023-10-04 17:20:50.6094||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:20:50.6094||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:20:50.6258||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartment", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.Object]]] GetCompanyDepartmentAsync() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:20:51.0133||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:20:51.1878||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) - Validation state: Valid 
+2023-10-04 17:20:51.6176||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CompanyId], [t].[DepartmentName], [t0].[Id], [t0].[CompanyName]
+FROM [tblCompanyDepartment] AS [t]
+INNER JOIN [tblCompany] AS [t0] ON [t].[CompanyId] = [t0].[Id] 
+2023-10-04 17:20:51.6351||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api), returned result Microsoft.AspNetCore.Mvc.NotFoundObjectResult in 445.2563ms. 
+2023-10-04 17:20:51.6351||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing NotFoundObjectResult, writing value of type 'System.String'. 
+2023-10-04 17:20:51.6351||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) in 1014.1823ms 
+2023-10-04 17:20:51.6351||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:20:51.6501||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - - 404 - text/plain;+charset=utf-8 1040.7189ms 
+2023-10-04 17:23:08.6435||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-04 17:23:08.8579||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-04 17:23:08.8579||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-04 17:23:08.8704||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-04 17:23:08.8704||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-04 17:23:08.8704||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock.Model\Stock.Api 
+2023-10-04 17:23:09.1836||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-04 17:23:09.4058||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 223.9630ms 
+2023-10-04 17:23:09.4058||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-04 17:23:09.4058||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-04 17:23:09.4171||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 5.5943ms 
+2023-10-04 17:23:09.4171||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 13.1954ms 
+2023-10-04 17:23:09.5607||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-04 17:23:09.6450||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 84.3010ms 
+2023-10-04 17:23:12.7684||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - 
+2023-10-04 17:23:12.7684||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:23:12.7925||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "GetCompanyDepartment", controller = "CompanyDepartment"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[System.Object]]] GetCompanyDepartmentAsync() on controller Stock.Api.Controllers.CompanyDepartmentController (Stock.Api). 
+2023-10-04 17:23:13.1751||WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2023-10-04 17:23:13.3472||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executing action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) - Validation state: Valid 
+2023-10-04 17:23:13.7773||INFO|Microsoft.EntityFrameworkCore.Database.Command|Executed DbCommand (24ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT [t].[Id], [t].[CompanyId], [t].[DepartmentName], [t0].[Id], [t0].[CompanyName]
+FROM [tblCompanyDepartment] AS [t]
+INNER JOIN [tblCompany] AS [t0] ON [t].[CompanyId] = [t0].[Id] 
+2023-10-04 17:23:13.7992||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action method Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 449.2886ms. 
+2023-10-04 17:23:13.7992||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor|Executing OkObjectResult, writing value of type 'System.Linq.Enumerable+SelectListIterator`2[[Stock.Model.CompanyDepartment, Stock.Model, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[<>f__AnonymousType0`3[[System.Int32, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Stock.Repository, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2023-10-04 17:23:13.8098||INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api) in 1015.2153ms 
+2023-10-04 17:23:13.8098||INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'Stock.Api.Controllers.CompanyDepartmentController.GetCompanyDepartmentAsync (Stock.Api)' 
+2023-10-04 17:23:13.8098||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/api/CompanyDepartment/GetCompanyDepartments - - - 200 - application/json;+charset=utf-8 1046.0247ms 

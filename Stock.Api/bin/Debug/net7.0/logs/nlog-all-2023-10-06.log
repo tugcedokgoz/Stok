@@ -1,0 +1,6 @@
+2023-10-06 10:42:46.1143||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-06 10:42:46.2965||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-06 10:42:46.2965||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-06 10:42:46.2965||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-06 10:42:46.2965||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-06 10:42:46.2965||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\StockProject\Stock\Stock.Api 

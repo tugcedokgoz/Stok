@@ -1,0 +1,92 @@
+﻿@using Stock.UI.Code;
+
+
+<div id="divSuperiorRequests">
+</div>
+<input type="hidden" value="@Repo.Session.UserId" id="inputUserId"></input>
+
+<!--Kaydetme-->
+<div class="modal fade" id="requestModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Yeni request Ekle</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <input type="hidden" id="inputUserfullName" class="form-control" name="requestfullName" value="@Repo.Session.UserId" />
+                <label for="inputCategoryName" class="form-label">Kategori</label>
+                <select type="text" id="inputCategoryName" class="form-control">
+                    <option value="" disabled selected>Kategori Seçiniz</option>
+                </select>
+
+                <label for="inputProductName" class="form-label">Ürün</label>
+                <select type="text" id="inputProductName" class="form-control">
+                    <option value="" disabled selected>Ürün Seçiniz</option>
+                </select>
+
+                <label for="inputAmount" class="form-label">Adet</label>
+                <input type="text" id="inputAmount" class="form-control" name="inputAmount" />
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button onclick="SaveRequest()" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Düzenleme-->
+<div class="modal fade" id="requestEditModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="requestEditForm">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">request Düzenle</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="inputEditrequestName" class="form-label">request Adı-Soyadı</label>
+                    <input type="text" id="inputEditrequestfullName" class="form-control" name="requestEditfullName" />
+                    <label for="inputEditrequestEmail" class="form-label">request Email</label>
+                    <input type="text" id="inputEditrequestEmail" class="form-control" name="requestEditEmail" />
+                    <label for="inputrequestPassword" class="form-label">request Şifre</label>
+                    <input type="text" id="inputEditrequestPassword" class="form-control" name="requestEditPassword" />
+
+                    <label for="inputEditCompanyName" class="form-label">Şirket</label>
+                    <select type="text" id="inputEditCompanyName" class="form-control">
+                        <option value="" disabled selected>Şirket Seçiniz</option>
+                    </select>
+
+                    <label for="inputEditCompanyDepartmentName" class="form-label">Şirket</label>
+                    <select type="text" id="inputEditCompanyDepartmentName" class="form-control">
+                        <option value="" disabled selected>Departman Seçiniz</option>
+                    </select>
+
+                    <label for="inputEditRole" class="form-label">Rol</label>
+                    <select type="text" id="inputEditRole" class="form-control">
+                        <option value="" disabled selected>Rol Seçiniz</option>
+                    </select>
+                    <label for="inputEditSuperiorName" class="form-label">Amir</label>
+                    <select type="text" id="inputEditSuperiorName" class="form-control">
+                        <option value="" disabled selected>Amir Seçiniz</option>
+                    </select>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script src="~/js/personel/superior.js"></script>
+
+@*<script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>*@

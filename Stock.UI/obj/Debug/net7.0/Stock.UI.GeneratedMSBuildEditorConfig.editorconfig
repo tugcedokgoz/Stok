@@ -1,0 +1,137 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Stock.UI
+build_property.RootNamespace = Stock.UI
+build_property.ProjectDir = C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.UI\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.UI
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Accounter/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudGVyXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Accounter/Views/Home/Request.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudGVyXFZpZXdzXEhvbWVcUmVxdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Accounter/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudGVyXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Admin/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Admin/Views/Home/Personel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcSG9tZVxQZXJzb25lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Admin/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Offer/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT2ZmZXJcVmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Offer/Views/Home/Offer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT2ZmZXJcVmlld3NcSG9tZVxPZmZlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Offer/Views/Home/Request.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT2ZmZXJcVmlld3NcSG9tZVxSZXF1ZXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Offer/Views/Home/Stock.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT2ZmZXJcVmlld3NcSG9tZVxTdG9jay5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/Offer/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcT2ZmZXJcVmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/User/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/User/Views/Home/Request.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/User/Views/Home/SuperiorRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xIb21lXFN1cGVyaW9yUmVxdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Areas/User/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcVXNlclxWaWV3c1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-6q52gsf9bj
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_MudurLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NdWR1ckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-p8jp2ooirx
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_MuhasebeLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9NdWhhc2ViZUxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-lic8vfgxkh
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_OfferLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9PZmZlckxheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-2xftdoigk2
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_PersonelLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QZXJzb25lbExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-ceiqfu30xp
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_RandomLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9SYW5kb21MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-yhi88oyjof
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_SuperAdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TdXBlckFkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-js41jxbrlf
+
+[C:/Users/tugcedokgoz/Desktop/Yeni klasör (3)/Stock.UI/Views/Shared/_YonetimLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Zb25ldGltTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-c85gq8rvlq
