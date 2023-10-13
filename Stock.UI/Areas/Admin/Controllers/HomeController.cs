@@ -11,6 +11,10 @@ namespace Stock.UI.Areas.Admin.Controllers
         
         public IActionResult Index() => View();
         public IActionResult Personel() => View();
+        public IActionResult Role() => View();
+        public IActionResult Company() => View();
+        public IActionResult Department() => View();
+        public IActionResult Request() => View();
 
 
     }

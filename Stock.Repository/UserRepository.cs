@@ -49,11 +49,11 @@ namespace Stock.Repository
             return user;
         }
 
-        public User GetUserByName(string userFullName)
-        {
-            return FindByCondition(u => u.UserFullName == userFullName)
-                .FirstOrDefault();
-        }
+        //public User GetUserByName(string userFullName)
+        //{
+        //    return FindByCondition(u => u.UserFullName == userFullName)
+        //        .FirstOrDefault();
+        //}
 
 
     }

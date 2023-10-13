@@ -21,5 +21,7 @@
         html += `</table>`;
         $("#divRoles").html(html);
     });
-    })
 }
+$(document).ready(function () {
+    GetRoles();
+});

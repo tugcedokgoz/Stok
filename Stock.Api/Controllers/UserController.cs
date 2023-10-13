@@ -39,58 +39,58 @@ namespace Stock.Api.Controllers
             return Ok("Kullanıcı başarı ile silindi");
         }
 
-        [HttpPost("CreateUser")]
-        public IActionResult CreateUser([FromBody] User user)
-        {
-            // Kullanıcının ait olduğu rolü bul
-            var role = repo.RoleRepository.GetRoleByName(user.Role.RoleName);
-            if (role == null)
-            {
-                return BadRequest("Rol bulunamadı");
-            }
+        //[HttpPost("CreateUser")]
+        //public IActionResult CreateUser([FromBody] User user)
+        //{
+        //    // Kullanıcının ait olduğu rolü bul
+        //    var role = repo.RoleRepository.GetRoleByName(user.Role.RoleName);
+        //    if (role == null)
+        //    {
+        //        return BadRequest("Rol bulunamadı");
+        //    }
 
-            // Kullanıcının ait olduğu şirketi bul
-            var company = repo.CompanyRepository.GetCompanyByName(user.Company.CompanyName);
-            if (company == null)
-            {
-                return BadRequest("Şirket bulunamadı");
-            }
+        //    // Kullanıcının ait olduğu şirketi bul
+        //    var company = repo.CompanyRepository.GetCompanyByName(user.Company.CompanyName);
+        //    if (company == null)
+        //    {
+        //        return BadRequest("Şirket bulunamadı");
+        //    }
 
-            // Kullanıcının ait olduğu departmanı bul
-            var department = repo.CompanyDepartmentRepository.GetDepartmentByName(user.CompanyDepartment.DepartmentName, company.Id);
-            if (department == null)
-            {
-                return BadRequest("Departman bulunamadı");
-            }
+        //    // Kullanıcının ait olduğu departmanı bul
+        //    var department = repo.CompanyDepartmentRepository.GetDepartmentByName(user.CompanyDepartment.DepartmentName, company.Id);
+        //    if (department == null)
+        //    {
+        //        return BadRequest("Departman bulunamadı");
+        //    }
 
-            // Kullanıcının üstünü bul
-            User superior = null;
-            if (!string.IsNullOrEmpty(user.Superior?.UserFullName))
-            {
-                superior = repo.UserRepository.GetUserByName(user.Superior.UserFullName);
-                if (superior == null)
-                {
-                    return BadRequest("Üst kullanıcı bulunamadı");
-                }
-            }
+        //    // Kullanıcının üstünü bul
+        //    User superior = null;
+        //    if (!string.IsNullOrEmpty(user.Superior?.UserFullName))
+        //    {
+        //        superior = repo.UserRepository.GetUserByName(user.Superior.UserFullName);
+        //        if (superior == null)
+        //        {
+        //            return BadRequest("Üst kullanıcı bulunamadı");
+        //        }
+        //    }
 
-            // Yeni kullanıcı oluştur
-            user.RoleId = role.Id;
-            user.Role = role;
-            user.CompanyId = company.Id;
-            user.Company = company;
-            user.CompanyDepartmentId = department.Id;
-            user.CompanyDepartment = department;
-            user.SuperiorId = superior?.Id;
-            user.Superior = superior;
+        //    // Yeni kullanıcı oluştur
+        //    user.RoleId = role.Id;
+        //    user.Role = role;
+        //    user.CompanyId = company.Id;
+        //    user.Company = company;
+        //    user.CompanyDepartmentId = department.Id;
+        //    user.CompanyDepartment = department;
+        //    user.SuperiorId = superior?.Id;
+        //    user.Superior = superior;
 
-            repo.UserRepository.CreateUser(user);
+        //    repo.UserRepository.CreateUser(user);
 
-            // Değişiklikleri kaydet
-            repo.SaveChanges();
+        //    // Değişiklikleri kaydet
+        //    repo.SaveChanges();
 
-            return Ok("Kullanıcı oluşturuldu");
-        }
+        //    return Ok("Kullanıcı oluşturuldu");
+        //}
 
     }
 }

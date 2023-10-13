@@ -8205,6 +8205,18 @@
       "PackagePath": "staticwebassets\\js\\Accounter\\accounter.js"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.UI\\wwwroot\\js\\Admin\\company.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\company.js"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.UI\\wwwroot\\js\\Admin\\department.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\department.js"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.UI\\wwwroot\\js\\Admin\\request.js",
+      "PackagePath": "staticwebassets\\js\\Admin\\request.js"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.UI\\wwwroot\\js\\Admin\\role.js",
       "PackagePath": "staticwebassets\\js\\Admin\\role.js"
     },
