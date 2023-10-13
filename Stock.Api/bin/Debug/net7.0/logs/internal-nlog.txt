@@ -5894,3 +5894,21 @@ File name: 'NLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
 2023-10-13 10:36:13.1394 Info Validating config: TargetNames=filelog, consolelog, ConfigItems=36 ConfigSection=NLog
 2023-10-13 10:36:13.1394 Info Configuration initialized.
 2023-10-13 10:36:13.4620 Info Validating config: TargetNames=filelog, consolelog, ConfigItems=36 ConfigSection=NLog
+2023-10-13 11:37:20.2807 Info Loading assembly name: NLog.Extensions.Logging
+2023-10-13 11:37:20.2986 Info NLog.Extensions.Logging, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.3.4.395. Product version: 5.3.4+f25691537a7b2c27641175a641817bfbeee5996c. GlobalAssemblyCache: False
+2023-10-13 11:37:20.2986 Info Loading assembly name: NLog.Web.AspNetCore
+2023-10-13 11:37:20.3390 Warn Error has been raised. Exception: NLog.NLogConfigurationException: Error loading extensions: NLog.Web.AspNetCore
+ ---> System.IO.FileNotFoundException: Could not load file or assembly 'NLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'. Sistem belirtilen dosyayı bulamıyor.
+File name: 'NLog.Web.AspNetCore, Culture=neutral, PublicKeyToken=null'
+   at System.Reflection.RuntimeAssembly.InternalLoad(AssemblyName assemblyName, StackCrawlMark& stackMark, AssemblyLoadContext assemblyLoadContext, RuntimeAssembly requestingAssembly, Boolean throwOnFileNotFound)
+   at System.Reflection.Assembly.Load(String assemblyString)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(String assemblyName)
+   at NLog.Config.AssemblyExtensionLoader.LoadAssemblyFromName(ConfigurationItemFactory factory, String assemblyName, String itemNamePrefix)
+   at NLog.Config.LoggingConfigurationParser.ParseExtensionWithAssemblyName(String assemblyName, String prefix)
+   --- End of inner exception stack trace ---
+2023-10-13 11:37:20.3963 Info Registered target NLog.Targets.ConsoleTarget(Name=consolelog)
+2023-10-13 11:37:20.3963 Info Registered target NLog.Targets.FileTarget(Name=filelog)
+2023-10-13 11:37:20.4044 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.4.2092. Product version: 5.2.4+5ed75b125a691ce9f01e64641f1a79f438385847. GlobalAssemblyCache: False
+2023-10-13 11:37:20.4044 Info Validating config: TargetNames=filelog, consolelog, ConfigItems=36 ConfigSection=NLog
+2023-10-13 11:37:20.4044 Info Configuration initialized.
+2023-10-13 11:37:20.8619 Info Validating config: TargetNames=filelog, consolelog, ConfigItems=36 ConfigSection=NLog

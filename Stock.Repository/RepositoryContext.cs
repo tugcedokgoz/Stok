@@ -35,6 +35,7 @@ namespace Stock.Repository
         public DbSet<Company>Companies { get; set; }
         public DbSet<Bid> Bids { get; set; }
         public DbSet<CompanyUser> CompanyUsers { get; set; }
+        public DbSet<Offer> Offers { get; set; }
 
     }
 }
