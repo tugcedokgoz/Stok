@@ -13,6 +13,7 @@ namespace Stock.UI.Areas.Offer.Controllers
         public IActionResult Offer() => View();
         public IActionResult Request() => View();
         public IActionResult Stock() => View();
+        public IActionResult Product() => View();
 
     }
 }

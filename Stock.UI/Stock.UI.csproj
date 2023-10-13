@@ -30,9 +30,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\js\Offer\stock.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="wwwroot\js\Offer\stock.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\Admin\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v2-4-x.md" />
     <None Include="wwwroot\Admin\.github\ISSUE_TEMPLATE\bug-report-for-adminlte-v3-x.md" />
     <None Include="wwwroot\Admin\.github\ISSUE_TEMPLATE\feature-request-for-adminlte-v3-x.md" />
+    <None Include="wwwroot\js\Offer\stock.js" />
   </ItemGroup>
 
   <ItemGroup>

@@ -11,17 +11,17 @@ namespace Stock.Api.Controllers
     [ApiController]
     public class DepartmentStockController : BaseController
     {
-        
-        public DepartmentStockController(RepositoryWrapper repo,IMemoryCache cache):base(repo,cache)
+
+        public DepartmentStockController(RepositoryWrapper repo, IMemoryCache cache) : base(repo, cache)
         {
-            
+
         }
 
         [HttpGet("GetDepartmentStock")]
         public async Task<ActionResult<IEnumerable<object>>> GetDepartmentStock()
         {
-            var departmentStock=await repo.DepartmentStockRepository.GetDepartmentStockAsync();
-            if(departmentStock==null| !departmentStock.Any())
+            var departmentStock = await repo.DepartmentStockRepository.GetDepartmentStockAsync();
+            if (departmentStock == null | !departmentStock.Any())
             {
                 return NotFound("Stok Bulunamadı");
             }
@@ -34,9 +34,9 @@ namespace Stock.Api.Controllers
             DepartmentProductStock departmentProductStock = new DepartmentProductStock()
             {
                 Id = json.Id,
-              DepartmentId = json.DepartmentId,
-              ProductId = json.ProductId,
-              Amount = json.Amount,
+                DepartmentId = json.DepartmentId,
+                ProductId = json.ProductId,
+                Amount = json.Amount,
 
 
 
@@ -61,15 +61,29 @@ namespace Stock.Api.Controllers
 
         }
         [HttpPost("Delete")]
-        public async Task <ActionResult>DeleteDepartmentStock(int departmentStockId)
+        public async Task<ActionResult> DeleteDepartmentStock(int departmentStockId)
         {
             var departmentStock = await repo.DepartmentStockRepository.FindByIdAsync(departmentStockId);
             if (departmentStock == null)
                 return NotFound("Stok Bulunamadı");
             repo.DepartmentStockRepository.Delete(departmentStock);
-           repo.SaveChanges();
+            repo.SaveChanges();
             return Ok("Stok Başarı ile silindi");
 
         }
+
+        [HttpGet("GetDepartmentProductStockByDepartmentId/{departmentId}")]
+        public async Task<ActionResult<IEnumerable<object>>> GetDepartmentProductStockByDepartmentId(int departmentId)
+        {
+            var departmentStock = await repo.DepartmentStockRepository.GetDepartmentStockByDepartmentIdAsync(departmentId);
+
+            if (departmentStock == null || !departmentStock.Any())
+            {
+                return NotFound("Belirtilen departmana ait stok bulunamadı");
+            }
+
+            return Ok(departmentStock);
+        }
+
     }
 }

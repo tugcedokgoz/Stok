@@ -73,3 +73,18 @@ C:\Users\tugcedokgoz\Desktop\StockProject\StockProject\Stock\Stock.Repository\ob
 C:\Users\tugcedokgoz\Desktop\StockProject\StockProject\Stock\Stock.Repository\obj\Debug\net7.0\refint\Stock.Repository.dll
 C:\Users\tugcedokgoz\Desktop\StockProject\StockProject\Stock\Stock.Repository\obj\Debug\net7.0\Stock.Repository.pdb
 C:\Users\tugcedokgoz\Desktop\StockProject\StockProject\Stock\Stock.Repository\obj\Debug\net7.0\ref\Stock.Repository.dll
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\bin\Debug\net7.0\Stock.Repository.deps.json
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\bin\Debug\net7.0\Stock.Repository.dll
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\bin\Debug\net7.0\Stock.Repository.pdb
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\bin\Debug\net7.0\Stock.Model.dll
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\bin\Debug\net7.0\Stock.Model.pdb
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.csproj.AssemblyReference.cache
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.AssemblyInfoInputs.cache
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.AssemblyInfo.cs
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.csproj.CoreCompileInputs.cache
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.csproj.CopyComplete
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.dll
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\refint\Stock.Repository.dll
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\Stock.Repository.pdb
+C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Repository\obj\Debug\net7.0\ref\Stock.Repository.dll
