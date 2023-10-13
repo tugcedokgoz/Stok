@@ -44,6 +44,8 @@ namespace Stock.Repository
 
 
 
+
+
         public RepositoryWrapper(RepositoryContext context)
         {
             this._context = context;
@@ -184,7 +186,6 @@ namespace Stock.Repository
                 return _companyUserRepository;
             }
         }
-
         public OfferRepository OfferRepository
         {
             get
@@ -194,6 +195,7 @@ namespace Stock.Repository
                 return _offerRepository;
             }
         }
+
 
 
         public void SaveChanges()

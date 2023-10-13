@@ -16,6 +16,11 @@ namespace Stock.Repository
             _context = context;
             
         }
+        public void CreateUser(User user)
+        {
+            _context.Users.Add(user);
+         
+        }
         public async Task<IEnumerable<object>> GetUsersAsync()
         {
             var userDetails = await _context.Users
@@ -42,6 +47,12 @@ namespace Stock.Repository
         {
             var user=await _context.Users.FirstOrDefaultAsync(u=>u.Id==userId);
             return user;
+        }
+
+        public User GetUserByName(string userFullName)
+        {
+            return FindByCondition(u => u.UserFullName == userFullName)
+                .FirstOrDefault();
         }
 
 

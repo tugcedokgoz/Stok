@@ -25,6 +25,11 @@ namespace Stock.Repository
             var role = await _context.Roles.FirstOrDefaultAsync(r => r.Id == roleId);
             return role;
         }
+        public Role GetRoleByName(string roleName)
+        {
+            return FindByCondition(r => r.RoleName == roleName)
+                .FirstOrDefault();
+        }
 
     }
 }

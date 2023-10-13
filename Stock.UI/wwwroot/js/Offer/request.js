@@ -43,11 +43,46 @@ function formatDate(inputDate) {
     return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
 }
 
-function setOfferId(offerId) {
-    // Gizli input alanına tıklanan satırın ID değerini ayarlama
-    document.getElementById('offerId').value = offerId;
-}
+//function setOfferId(offerId) {
+//    // Gizli input alanına tıklanan satırın ID değerini ayarlama
+//    document.getElementById('offerId').value = offerId;
+//}
+//function submitOffer(offerId, offerPrice, successCallback) {
+//    var data = {
+//        offerId: offerId,
+//        offerPrice: offerPrice
+//    };
+
+//    Post("api/Offer/SubmitOffer", data, function (response) {
+//        if (response.Status === "Success") {
+//            // İşlem başarılı oldu, gerekirse başka bir işlem yapabilirsiniz.
+//            console.log(response.Message);
+
+//            // Örnek olarak, teklif formunu kapatma işlemi
+//            $("#userModal").modal("hide");
+//        } else {
+//            // Hata durumunda işlem yapabilirsiniz.
+//            console.error(response.Message);
+//        }
+
+//        if (typeof successCallback === 'function') {
+//            successCallback(response);
+//        }
+//    });
+//}
+
+//// Ekstra işlevler burada
 
 $(document).ready(function () {
     GetRequest();
+
+    //$("#userForm").submit(function (e) {
+    //    e.preventDefault();
+
+    //    // offerId ve offerPrice değerlerini alarak submitOffer işlemini çağırın
+    //    var offerId = $("#offerId").val();
+    //    var offerPrice = $("#inputOffer").val();
+
+    //    submitOffer(offerId, offerPrice);
+    //});
 });

@@ -30,7 +30,5 @@ namespace Stock.Model
         [ForeignKey("RequestStatusId")]
         public RequestStatus? RequestStatus { get; set; }
         public int? UserSuperiorId { get; set; }
-        //[ForeignKey("UserSuperiorId")]
-        //public User? Superior { get; set; }
     }
 }

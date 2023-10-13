@@ -10,5 +10,6 @@ namespace Stock.UI.Areas.Accounter.Controllers
             return View();
         }
         public IActionResult Request() => View();
+        public IActionResult Stock() => View();
     }
 }

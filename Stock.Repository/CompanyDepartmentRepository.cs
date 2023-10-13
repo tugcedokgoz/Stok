@@ -50,7 +50,13 @@ namespace Stock.Repository
 
 			return companyDepartmentDetails;
 		}
-	}
+
+        public CompanyDepartment GetDepartmentByName(string departmentName, int companyId)
+        {
+            return FindByCondition(cd => cd.DepartmentName == departmentName && cd.CompanyId == companyId)
+                .FirstOrDefault();
+        }
+    }
 
 }
 

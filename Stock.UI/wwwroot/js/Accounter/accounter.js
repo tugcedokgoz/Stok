@@ -1,5 +1,5 @@
 ﻿function GetRequest() {
-    Get("Request/GetRequestByStatus/5", (data) => {
+    Get("Request/GetRequestsByStatus/5", (data) => {
         var html = `<table class="table table-hover">` +
             `<tr>
                 <th>Kullanıcı Adı</th>
