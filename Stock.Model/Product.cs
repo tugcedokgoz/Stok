@@ -15,7 +15,5 @@ namespace Stock.Model
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
-        public decimal? Price { get; set; }
-        public int Amount { get; set; }
     }
 }

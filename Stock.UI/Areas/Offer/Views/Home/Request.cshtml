@@ -16,7 +16,19 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <label for="inputOffer" class="form-label">Teklif Tutarı</label>
+                        <label for="inputSupplierName" class="form-label">Teklif Veren Şirket</label>
+                        <select type="text" id="inputSupplierName" class="form-control">
+                            <option value="" disabled selected>Tedarikçi Şirket Seçiniz</option>
+                        </select>
+                        <label for="inputAmount" class="form-label">Ürün Adet</label>
+                        <input type="text" id="inputAmount" class="form-control" name="offerAmount" />
+   
+                        <label for="inputUnitPrice" class="form-label">Adet Fiyatı</label>
+                        <input type="text" id="inputUnitPrice" class="form-control" name="unitPrice" />
+
+                       
+
+                        <label for="inputOffer" class="form-label">Toplam Tutar</label>
                         <input type="text" id="inputOffer" class="form-control" name="offerPrice" />
 
                         <!-- OfferId'yi saklamak için gizli input -->

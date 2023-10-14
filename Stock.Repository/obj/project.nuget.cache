@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6jPfSB7TzYdlAx7+qiSelPqxbEP/2o1Fw6AVDtD+uROXm7HL0VauiLAJsCzmepVJJbG6e9YdG7Ues1VKIZzbBw==",
+  "dgSpecHash": "V+NU++x1KGh2TI0HB1d4wwY5zKSeM28xuROo9ARCnfOM4Hu6nwQDxhh8OUM82XK3j6w3tjsmRhid12dwl7AlDA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.Repository\\Stock.Repository.csproj",
+  "projectFilePath": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.Repository\\Stock.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",

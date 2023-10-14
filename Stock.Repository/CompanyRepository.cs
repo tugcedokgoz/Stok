@@ -52,11 +52,5 @@ namespace Stock.Repository
             return company;
         }
 
-        //public Company GetCompanyByName(string companyName)
-        //{
-        //    return FindByCondition(c => c.CompanyName == companyName)
-        //        .FirstOrDefault();
-        //}
-
     }
 }

@@ -25,8 +25,6 @@ namespace Stock.Repository
             {
                 product.Id,
                 product.ProductName,
-                product.Price,
-                product.Amount,
                 product.CategoryId,
                 CategoryName = product.Category != null ? product.Category.CategoryName : null,
               

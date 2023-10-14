@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "iVXZ4PHcgEwZ+FgdxiiawowUXlWJM2Vx9lQtpIEDdHDXAzCxCFVqDRIcvXDMz5iae+HAKPM6/Qx/8G1aWZWjDg==",
+  "dgSpecHash": "BhzUmDF54OgXSQLKupFTN6f42rGYTZpb8VtUVxQAdpinUnshK20Fbh6oBU/oOTxJB0xclgixnTYLDRrgFfMuDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.UI\\Stock.UI.csproj",
+  "projectFilePath": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\Stock.UI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.4\\microsoft.extensions.configuration.3.1.4.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.4\\microsoft.extensions.configuration.abstractions.3.1.4.nupkg.sha512",

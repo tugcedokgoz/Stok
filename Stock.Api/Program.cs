@@ -38,7 +38,7 @@ builder.Services.AddAuthentication(x =>
 });
 
 //database
-builder.Services.AddDbContext<RepositoryContext>(opts => opts.UseSqlServer("Data Source=DESKTOP-R04PVQ3\\SQLEXPRESS; Initial Catalog=DbStock; Integrated Security=true; TrustServerCertificate=True"));
+builder.Services.AddDbContext<RepositoryContext>(opts => opts.UseSqlServer("Data Source=DESKTOP-KSSIRCE; Initial Catalog=DbStock; Integrated Security=true; TrustServerCertificate=True"));
 builder.Services.AddScoped<RepositoryWrapper, RepositoryWrapper>();
 
 

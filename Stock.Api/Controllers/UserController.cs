@@ -39,58 +39,41 @@ namespace Stock.Api.Controllers
             return Ok("Kullanıcı başarı ile silindi");
         }
 
-        //[HttpPost("CreateUser")]
-        //public IActionResult CreateUser([FromBody] User user)
-        //{
-        //    // Kullanıcının ait olduğu rolü bul
-        //    var role = repo.RoleRepository.GetRoleByName(user.Role.RoleName);
-        //    if (role == null)
-        //    {
-        //        return BadRequest("Rol bulunamadı");
-        //    }
+        [HttpPost("Save")]
+        public dynamic Save([FromBody] dynamic model)
+        {
+            dynamic json = JObject.Parse(model.GetRawText());
 
-        //    // Kullanıcının ait olduğu şirketi bul
-        //    var company = repo.CompanyRepository.GetCompanyByName(user.Company.CompanyName);
-        //    if (company == null)
-        //    {
-        //        return BadRequest("Şirket bulunamadı");
-        //    }
+            User user = new User()
+            {
+                Id=json.Id,
+                UserFullName=json.UserFullName,
+                UserEmail=json.UserEmail,
+                Password=json.Password,
+                CompanyDepartmentId=json.CompanyDepartmentId,
+                RoleId=json.RoleId,
+                SuperiorId=json.SuperiorId
+            };
 
-        //    // Kullanıcının ait olduğu departmanı bul
-        //    var department = repo.CompanyDepartmentRepository.GetDepartmentByName(user.CompanyDepartment.DepartmentName, company.Id);
-        //    if (department == null)
-        //    {
-        //        return BadRequest("Departman bulunamadı");
-        //    }
+         
+            if (user.Id > 0)
+            {
+                repo.UserRepository.Update(user);
+            }
+            else
+            {
+                repo.UserRepository.Create(user);
+            }
 
-        //    // Kullanıcının üstünü bul
-        //    User superior = null;
-        //    if (!string.IsNullOrEmpty(user.Superior?.UserFullName))
-        //    {
-        //        superior = repo.UserRepository.GetUserByName(user.Superior.UserFullName);
-        //        if (superior == null)
-        //        {
-        //            return BadRequest("Üst kullanıcı bulunamadı");
-        //        }
-        //    }
+            repo.SaveChanges();
 
-        //    // Yeni kullanıcı oluştur
-        //    user.RoleId = role.Id;
-        //    user.Role = role;
-        //    user.CompanyId = company.Id;
-        //    user.Company = company;
-        //    user.CompanyDepartmentId = department.Id;
-        //    user.CompanyDepartment = department;
-        //    user.SuperiorId = superior?.Id;
-        //    user.Superior = superior;
+            return new
+            {
+                success = true,
+                message = "User saved successfully"
+            };
+        }
 
-        //    repo.UserRepository.CreateUser(user);
-
-        //    // Değişiklikleri kaydet
-        //    repo.SaveChanges();
-
-        //    return Ok("Kullanıcı oluşturuldu");
-        //}
 
     }
 }

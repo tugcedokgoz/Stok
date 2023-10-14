@@ -12,5 +12,6 @@ namespace Stock.Model
     {
         public int Id { get; set; }
         public string SupplierCompanyName { get; set; }
+
     }
 }

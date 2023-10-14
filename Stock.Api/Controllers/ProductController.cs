@@ -34,8 +34,7 @@ namespace Stock.Api.Controllers
                 Id = json.Id,
                 ProductName = json.ProductName,
                 CategoryId = json.CategoryId,
-                Price = json.Price,
-                Amount = json.Amount,
+
 
 
 

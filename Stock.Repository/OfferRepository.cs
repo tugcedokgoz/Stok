@@ -21,6 +21,7 @@ namespace Stock.Repository
         {
             var offers = await _context.Offers
                 .Include(u => u.Requests)
+                .Include(u=>u.SupplierCompany)
                 .ToListAsync();
 
             var offersDetail = offers.Select(offer => new
@@ -28,7 +29,9 @@ namespace Stock.Repository
                 offer.Id,
                 offer.OfferPrice,
                 offer.Status,
+                offer.Amount,
                 RequestStatus = offer.Requests != null ? offer.Requests.RequestStatus : null,
+                SupplierCompany = offer.SupplierCompany != null ? offer.SupplierCompany.SupplierCompanyName : null,
 
             });
 

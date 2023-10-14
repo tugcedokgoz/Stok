@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2WQs9cP2KBMFk4KmvTIoXmlbu9IWNnQnMNe8eqn7HqxnVidhXP8rvtfxqRgxqb50AvocnXXEsiC9QFUSZ0RA+Q==",
+  "dgSpecHash": "sIUwJUBQWEmHd/xgaenGz2waiithFOOtMOdEEpYWwx+kkgB88Ioc5AgQl5qctm3lQ8QXrciZlOl4Gxn1ur7hrQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.Api\\Stock.Api.csproj",
+  "projectFilePath": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.Api\\Stock.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

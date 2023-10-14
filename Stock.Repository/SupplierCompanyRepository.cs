@@ -1,4 +1,5 @@
-﻿using Stock.Model;
+﻿using Microsoft.EntityFrameworkCore;
+using Stock.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,18 @@ using System.Threading.Tasks;
 
 namespace Stock.Repository
 {
-    public class SupplierCompanyRepository:RepositoryBase<SupplierCompany>
+    public class SupplierCompanyRepository : RepositoryBase<SupplierCompany>
     {
-        public SupplierCompanyRepository(RepositoryContext _context):base(_context) 
+        private readonly RepositoryContext _context;
+        public SupplierCompanyRepository(RepositoryContext context) : base(context)
         {
-            
+            _context = context;
         }
+        public async Task<IEnumerable<SupplierCompany>> GetSupplierAsync()
+        {
+            return await _context.SupplierCompanies.ToListAsync();
+        }
+
+      
     }
 }

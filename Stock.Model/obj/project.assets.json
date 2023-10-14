@@ -524,11 +524,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.Model\\Stock.Model.csproj",
+      "projectUniqueName": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.Model\\Stock.Model.csproj",
       "projectName": "Stock.Model",
-      "projectPath": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.Model\\Stock.Model.csproj",
+      "projectPath": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.Model\\Stock.Model.csproj",
       "packagesPath": "C:\\Users\\tugcedokgoz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tugcedokgoz\\Desktop\\Yeni klasör (3)\\Stock.Model\\obj\\",
+      "outputPath": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -543,7 +543,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -583,7 +582,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

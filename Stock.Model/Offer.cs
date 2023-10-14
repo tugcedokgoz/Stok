@@ -16,5 +16,9 @@ namespace Stock.Model
         public Requests Requests { get; set; }
         public decimal OfferPrice { get; set; }
         public bool Status { get; set; }
+        public int SupplierCompanyId { get; set; }
+        [ForeignKey("SupplierCompanyId")]
+        public SupplierCompany SupplierCompany { get; set; }
+        public int Amount { get; set; }
     }
 }

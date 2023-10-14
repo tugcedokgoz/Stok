@@ -38,11 +38,10 @@ namespace Stock.Repository
                 request.RequestStatusId,
                 request.UserSuperiorId,
                 UserFullName = request.User != null ? request.User.UserFullName : null,
+                DepartmentName = request.User.CompanyDepartment.DepartmentName != null ? request.User.CompanyDepartment.DepartmentName : null,
                 UserEmail = request.User != null ? request.User.UserEmail : null,
                 CategoryName = request.Category != null ? request.Category.CategoryName : null,
                 ProductName = request.Product != null ? request.Product.ProductName : null,
-                ProductAmount = request.Product?.Amount ?? 0,
-                Price = request.Product?.Price, //decimal olduğu için
                 StatusRequest = request.RequestStatus != null ? request.RequestStatus.StatusRequest : null,
                 Superior = request.User != null ? request.User.UserFullName : null,
                 RequestStatusName = request.RequestStatus != null ? request.RequestStatus.StatusRequest : null,
@@ -75,9 +74,10 @@ namespace Stock.Repository
                 UserFullName = request.User != null ? request.User.UserFullName : null,
                 UserEmail = request.User != null ? request.User.UserEmail : null,
                 CategoryName = request.Category != null ? request.Category.CategoryName : null,
+                DepartmentName = request.User != null && request.User.CompanyDepartment != null
+                ? request.User.CompanyDepartment.DepartmentName
+                : null,
                 ProductName = request.Product != null ? request.Product.ProductName : null,
-                ProductAmount = request.Product?.Amount ?? 0,
-                Price = request.Product?.Price, // decimal olduğu için
                 StatusRequest = request.RequestStatus != null ? request.RequestStatus.StatusRequest : null,
                 Superior = request.UserSuperiorId != null
                  ? _context.Users
@@ -114,9 +114,10 @@ namespace Stock.Repository
                 UserFullName = request.User != null ? request.User.UserFullName : null,
                 UserEmail = request.User != null ? request.User.UserEmail : null,
                 CategoryName = request.Category != null ? request.Category.CategoryName : null,
+                DepartmentName = request.User != null && request.User.CompanyDepartment != null
+                ? request.User.CompanyDepartment.DepartmentName
+                : null,
                 ProductName = request.Product != null ? request.Product.ProductName : null,
-                ProductAmount = request.Product?.Amount ?? 0,
-                Price = request.Product?.Price,
                 StatusRequest = request.RequestStatus != null ? request.RequestStatus.StatusRequest : null,
                 Superior = request.UserSuperiorId != null
                     ? _context.Users
@@ -136,6 +137,7 @@ namespace Stock.Repository
             var requests = await _context.Requests
                 .Where(r => r.RequestStatusId == statusId)
                 .Include(r => r.User)
+                .Include(r=>r.User.CompanyDepartment)
                 .Include(r => r.Category)
                 .Include(r => r.Product)
                 .Include(r => r.RequestStatus)
@@ -155,9 +157,11 @@ namespace Stock.Repository
                 UserFullName = request.User != null ? request.User.UserFullName : null,
                 UserEmail = request.User != null ? request.User.UserEmail : null,
                 CategoryName = request.Category != null ? request.Category.CategoryName : null,
+                DepartmentName = request.User != null && request.User.CompanyDepartment != null
+                ? request.User.CompanyDepartment.DepartmentName
+                : null,
+
                 ProductName = request.Product != null ? request.Product.ProductName : null,
-                ProductAmount = request.Product?.Amount ?? 0,
-                Price = request.Product?.Price,
                 StatusRequest = request.RequestStatus != null ? request.RequestStatus.StatusRequest : null,
                 Superior = request.UserSuperiorId != null
                     ? _context.Users

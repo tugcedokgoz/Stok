@@ -10,7 +10,6 @@ function GetRequest() {
                 <th>Talep Durum</th>
                 <th>Talep Tarih</th>
                 <th>Adet</th>
-                <th>Düzenle</th>
            
             </tr>`;
 
@@ -24,9 +23,6 @@ function GetRequest() {
             html += `<td>${arr[i].statusRequest}</td>`;
             html += `<td>${formatDate(arr[i].createDate)}</td>`;
             html += `<td>${arr[i].amount}</td>`;
-            html += `<td class="d-flex flex-row">
-                        <button type="button" class="btn btn-success btn-sm m-2" data-bs-toggle="modal" data-bs-target="#userEditModal" onclick='EditUser(${arr[i].id})'>Onay</button>
-                      </td>`;
             html += `</tr>`;
         }
         html += `</table>`;

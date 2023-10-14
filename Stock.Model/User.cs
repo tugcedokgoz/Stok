@@ -26,9 +26,6 @@ namespace Stock.Model
         [ForeignKey("SuperiorId")]
         public User? Superior { get; set; }
 
-        //public int CompanyId { get; set; }
-        //[ForeignKey("CompanyId")]
-        //public Company Company { get; set; }
 
 
     }

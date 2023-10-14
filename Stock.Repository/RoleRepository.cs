@@ -26,11 +26,6 @@ namespace Stock.Repository
             return role;
         }
         
-        //public Role GetRoleByName(string roleName)
-        //{
-        //    return FindByCondition(r => r.RoleName == roleName)
-        //        .FirstOrDefault();
-        //}
 
     }
 }

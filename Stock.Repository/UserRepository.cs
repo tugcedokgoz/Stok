@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace Stock.Repository
 {
@@ -15,12 +15,6 @@ namespace Stock.Repository
         public UserRepository(RepositoryContext context):base(context) 
         {
             _context = context;
-            
-        }
-        public void CreateUser(User user)
-        {
-            _context.Users.Add(user);
-         
         }
         public async Task<IEnumerable<object>> GetUsersAsync()
         {
@@ -50,11 +44,7 @@ namespace Stock.Repository
             return user;
         }
 
-        //public User GetUserByName(string userFullName)
-        //{
-        //    return FindByCondition(u => u.UserFullName == userFullName)
-        //        .FirstOrDefault();
-        //}
+
 
 
     }

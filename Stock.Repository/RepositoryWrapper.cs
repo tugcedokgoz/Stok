@@ -40,9 +40,10 @@ namespace Stock.Repository
         private BidRepository _billBidRepository;
 
         private CompanyUserRepository _companyUserRepository;
+
         private OfferRepository _offerRepository;
 
-
+        private SupplierProductRepository _supplierProductRepository;
 
 
 
@@ -195,8 +196,15 @@ namespace Stock.Repository
                 return _offerRepository;
             }
         }
-
-
+        public SupplierProductRepository SupplierProductRepository
+        {
+            get
+            {
+                if (_supplierProductRepository==null)
+                    _supplierProductRepository = new SupplierProductRepository(_context);
+                return _supplierProductRepository;
+            }
+        }
 
         public void SaveChanges()
         {

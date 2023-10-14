@@ -3,6 +3,7 @@
         var html = `<table class="table table-hover">` +
             `<tr>
                 <th>Kullanıcı Adı</th>
+                <th>Kullanıcı Departmanı</th>
                 <th>Kategori Adı</th>
                 <th>Ürün Adı</th>
                 <th>Talep Durum</th>
@@ -17,6 +18,7 @@
         for (var i = 0; i < arr.length; i++) {
             html += `<tr>`;
             html += `<td>${arr[i].userFullName}</td>`;
+            html += `<td>${arr[i].departmentName}</td>`;
             html += `<td>${arr[i].categoryName}</td>`;
             html += `<td>${arr[i].productName}</td>`;
             html += `<td>${arr[i].statusRequest}</td>`;

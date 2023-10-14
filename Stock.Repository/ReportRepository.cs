@@ -36,8 +36,6 @@ namespace Stock.Repository
                 UserEmail = report.User != null ? report.User.UserEmail : null,
                 UnitName = report.CompanyDepartment != null ? report.CompanyDepartment.DepartmentName : null,
                 ProductName = report.Product != null ? report.Product.ProductName : null,
-                ProductAmount=report.Product?.Amount ?? 0,
-                Price = report.Product?.Price, //decimal oldugu için 
                 SupplierCompanyName = report.Product != null ? report.SupplierCompany.SupplierCompanyName : null,
                
 

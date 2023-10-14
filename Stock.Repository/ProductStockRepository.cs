@@ -28,8 +28,6 @@ namespace Stock.Repository
                 productStock.ProductId,
                 CategoryName = productStock.Category != null ? productStock.Category.CategoryName : null,
                 ProductName = productStock.Product != null ? productStock.Product.ProductName : null,
-                ProductAmount = productStock.Product?.Amount ?? 0, //int oldugu için
-                Price = productStock.Product?.Price, //decimal olduğu için
             });
             return productStockDetails;
         }

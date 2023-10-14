@@ -70,3 +70,15 @@ C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Model\obj\Debug\net7.0\Stock
 C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Model\obj\Debug\net7.0\refint\Stock.Model.dll
 C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Model\obj\Debug\net7.0\Stock.Model.pdb
 C:\Users\tugcedokgoz\Desktop\Yeni klasör (3)\Stock.Model\obj\Debug\net7.0\ref\Stock.Model.dll
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\bin\Debug\net7.0\Stock.Model.deps.json
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\bin\Debug\net7.0\Stock.Model.dll
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\bin\Debug\net7.0\Stock.Model.pdb
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\Stock.Model.csproj.AssemblyReference.cache
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\Stock.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\Stock.Model.AssemblyInfoInputs.cache
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\Stock.Model.AssemblyInfo.cs
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\Stock.Model.csproj.CoreCompileInputs.cache
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\Stock.Model.dll
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\refint\Stock.Model.dll
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\Stock.Model.pdb
+C:\Users\tugcedokgoz\OneDrive\Masaüstü\stokclone\Stok\Stock.Model\obj\Debug\net7.0\ref\Stock.Model.dll
