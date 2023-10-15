@@ -37,6 +37,12 @@ app.MapControllerRoute(
 	name: "default",
 	pattern: "{controller=Home}/{action=Index}/{id?}");
 
+app.MapGet("/", context =>
+{
+    context.Response.Redirect("Account/Login");
+    return Task.CompletedTask;
+});
+
 //app.MapAreaControllerRoute(
 //	name: "area",
 //	areaName: "Admin",

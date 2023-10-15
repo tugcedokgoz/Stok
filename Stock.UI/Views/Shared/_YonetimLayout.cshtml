@@ -43,6 +43,7 @@
                 <!-- Messages Dropdown Menu -->
                 <li class="nav-item dropdown">
 
+                <li> <a class="dropdown-item" id="logoutLink" href="#">Çıkış</a></li>
 
                 </li>
 
@@ -129,6 +130,20 @@
         <footer class="main-footer">
         </footer>
     </div>
+
+    <script>
+        document.getElementById("logoutLink").addEventListener("click", function (event) {
+            event.preventDefault(); // Bağlantının varsayılan davranışını engelle
+            // Oturumu temizle
+            fetch('/Account/Logout', { method: 'POST' }) // Çıkış işlemi için gerekli URL'yi buraya eklemelisiniz
+                .then(response => {
+                    if (response.ok) {
+                        // Başarılı çıkış durumunda yapılacak işlemler
+                        window.location.href = 'https://localhost:7179/Account/Login'; // Giriş sayfasına yönlendir
+                    }
+                });
+        });
+    </script>
     <script src="\admin\plugins\jquery\jquery.min.js"></script>
 
 

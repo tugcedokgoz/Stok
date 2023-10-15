@@ -51,17 +51,3 @@ function Put(action, data, success) {
 
 
 
-//function Delete(action, success) {
-//    $.ajax({
-//        type: "DELETE",
-//        url: `${BASE_API_URI}/${action}`,
-//        dataType: "json",
-//        contentType: "application/json; charset=utf-8",
-//        success: function (response) {
-//            success(response);
-//        },
-//        error: function (XMLHttpRequest, textStatus, errorThrown) {
-//            alert(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
-//        }
-//    });
-//}

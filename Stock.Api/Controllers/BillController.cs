@@ -29,13 +29,13 @@ namespace Stock.Api.Controllers
             dynamic json = JObject.Parse(model.GetRawText());
             Bill bill = new Bill()
             {
-                Id = json.Id,
-                Price = json.Price,
-                Amount = json.Amount,
-                CategoryId = json.CategoryId,
-                CreateDate = json.CreateDate,
-                ProductId = json.ProductId,
-                SupplierCompanyId = json.SupplierCompanyId,
+                Id = json.Id != null ? (int)json.Id : 0,
+                Price = json.Price != null ? (decimal)json.Price : 0m,
+                Amount = json.Amount != null ? (int)json.Amount : 0,
+                CategoryId = json.CategoryId != null ? (int)json.CategoryId : 0,
+                ProductId = json.ProductId != null ? (int)json.ProductId : 0,
+                SupplierCompanyId = json.SupplierCompanyId != null ? (int)json.SupplierCompanyId : 0,    
+                CreateDate = json.CreateDate != null ? (DateTime)json.CreateDate : DateTime.Now
 
 
             };

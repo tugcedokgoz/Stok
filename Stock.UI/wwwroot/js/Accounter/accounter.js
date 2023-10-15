@@ -34,22 +34,93 @@
 function SetBillModal(id) {
     $("#BillId").val(parseInt(id))
 }
-function SaveRole() {
-    var role = {
-        Id: $("#BillId").val(),
-        Name: $("#inputSupplierName").val(),
-        Name: $("#inputCategoryName").val(),
-        Name: $("#inputProductName").val(),
-        Name: $("#inputAmount").val(),
-        Name: $("#inputPrice").val(),
+function SaveBill() {
+    var bill = {
+        Id: 0,
+        SupplierCompanyId: $("#inputSupplierName").val(),
+        CategoryId: $("#inputCategoryName").val(),
+        ProductId: $("#inputProductName").val(),
+        Amount: $("#inputAmount").val(),
+        Price: $("#inputPrice").val(),
     };
 
-    Post("Bill/Save", role, (data) => {
-        GetRoles();
+    Post("Bill/Save", bill, (data) => {
+        GetApprovedOffer();
         $("#billModal").modal("hide");
     });
 }
 
+function LoadSelectOptions() {
+    LoadCategories();
+}
+
+function LoadSupplierCompany() {
+    var select = $("#inputSupplierName");
+    select.empty();
+    select.append($('<option>', {
+        value: "",
+        text: "Şirket Seçiniz"
+    }));
+
+    Get("SupplierCompany/GetSupplierCompany", (data) => {
+        data.forEach(function (supplier) {
+            select.append($('<option>', {
+                value: supplier.id,
+                text: supplier.supplierCompanyName
+            }));
+        });
+    });  
+}
+function LoadCategories() {
+    var select = $("#inputCategoryName");
+    select.empty();
+    select.append($('<option>', {
+        value: "",
+        text: "Kategori Seçiniz"
+    }));
+
+    Get("Category/GetCategories", (data) => {
+        data.forEach(function (category) {
+            select.append($('<option>', {
+                value: category.id,
+                text: category.categoryName
+            }));
+        });
+
+
+        select.change(function () {
+            var selectedCategoryId = $(this).val();
+            if (selectedCategoryId) {
+                LoadCategoryProducts(selectedCategoryId);
+            } else {
+                var productSelect = $("#inputProductName");
+                productSelect.empty();
+                productSelect.append($('<option>', {
+                    value: "",
+                    text: "Ürün Seçiniz"
+                }));
+            }
+        });
+    });
+}
+
+
+function LoadCategoryProducts(categoryId) {
+    Get(`Product/GetProductByCatgeoryId/${categoryId}`, (data) => {
+        var select = $("#inputProductName");
+        select.empty();
+        select.append($('<option>', {
+            value: "",
+            text: "Ürün Seçiniz"
+        }));
+        data.forEach(function (product) {
+            select.append($('<option>', {
+                value: product.id,
+                text: product.productName
+            }));
+        });
+    });
+}
 function formatDate(inputDate) {
     const dateObj = new Date(inputDate);
     const year = dateObj.getFullYear();
@@ -62,10 +133,11 @@ function formatDate(inputDate) {
 }
 $(document).ready(function () {
     GetApprovedOffer();
-
+    LoadSelectOptions();
+    LoadSupplierCompany();
     $("#billForm").submit(function (event) {
         event.preventDefault();
-        SaveRole();
+        SaveBill();
     });
 });
 

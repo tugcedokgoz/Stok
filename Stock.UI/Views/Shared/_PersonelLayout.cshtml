@@ -33,6 +33,7 @@
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+                
                 </li>
 
             </ul>
@@ -43,8 +44,8 @@
             <ul class="navbar-nav ml-auto">
                 <!-- Messages Dropdown Menu -->
                 <li class="nav-item dropdown">
-                 
-                  
+
+                <li> <a class="dropdown-item" id="logoutLink" href="#">Çıkış</a></li>
                 </li>
         
             </ul>
@@ -136,6 +137,24 @@
            
         </footer>
     </div>
+
+    <script>
+        document.getElementById("logoutLink").addEventListener("click", function (event) {
+            event.preventDefault(); // Bağlantının varsayılan davranışını engelle
+            // Oturumu temizle
+            fetch('/Account/Logout', { method: 'POST' }) // Çıkış işlemi için gerekli URL'yi buraya eklemelisiniz
+                .then(response => {
+                    if (response.ok) {
+                        // Başarılı çıkış durumunda yapılacak işlemler
+                        window.location.href = 'https://localhost:7179/Account/Login'; // Giriş sayfasına yönlendir
+                    }
+                });
+        });
+    </script>
+
+
+
+
     <script src="\admin\plugins\jquery\jquery.min.js"></script>
 
 

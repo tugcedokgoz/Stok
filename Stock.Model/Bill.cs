@@ -23,5 +23,6 @@ namespace Stock.Model
         public int SupplierCompanyId { get; set; }
         [ForeignKey("SupplierCompanyId")]
         public SupplierCompany SupplierCompany { get; set; }
+
     }
 }

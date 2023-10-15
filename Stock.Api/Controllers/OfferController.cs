@@ -69,9 +69,9 @@ namespace Stock.Api.Controllers
                 .Select(offer => new
                 {
                     OfferId = offer.Id,
-                    RequestId=offer.RequestId,
-                    ProductName = offer.Requests.Product.ProductName, 
-                    SupplierCompanyName = offer.SupplierCompany.SupplierCompanyName, 
+                    RequestId = offer.RequestId,
+                    ProductName = offer.Requests.Product.ProductName,
+                    SupplierCompanyName = offer.SupplierCompany.SupplierCompanyName,
                     offer.OfferPrice,
                     offer.Status,
                     offer.Amount,
@@ -117,6 +117,7 @@ namespace Stock.Api.Controllers
                 {
                     OfferId = offer.Id,
                     ProductName = offer.Requests.Product.ProductName,
+                    //CategoryName = offer.Requests.Product.CategoryId,
                     SupplierCompanyName = offer.SupplierCompany.SupplierCompanyName,
                     offer.OfferPrice,
                     offer.Status,
