@@ -35,6 +35,7 @@ namespace Stock.Api.Controllers
                 CategoryId = json.CategoryId,
                 CreateDate = json.CreateDate,
                 ProductId = json.ProductId,
+                SupplierCompanyId = json.SupplierCompanyId,
 
 
             };

@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Caching.Memory;
+using Newtonsoft.Json.Linq;
 using Stock.Model;
 using Stock.Repository;
 
@@ -29,24 +30,33 @@ namespace Stock.Api.Controllers
         }
 
         [HttpPost("SaveRole")]
-        public async Task<ActionResult<Role>> SaveRole([FromBody] Role role)
+        public dynamic Save([FromBody] dynamic model)
         {
-            if (role == null)
-            {
-                return BadRequest("Geçersiz role verisi");
-            }
+            dynamic json = JObject.Parse(model.GetRawText());
 
-            if (role.Id == 0)
+            Role role = new Role()
             {
-                //repo.RoleRepository.Add(role);
-            }
-            else
+                Id = json.Id,
+                RoleName = json.roleName,
+            };
+
+
+            if (role.Id > 0)
             {
                 repo.RoleRepository.Update(role);
             }
-             repo.SaveChanges(); 
+            else
+            {
+                repo.RoleRepository.Create(role);
+            }
 
-            return Ok(role);
+            repo.SaveChanges();
+
+            return new
+            {
+                success = true,
+                message = "Role saved successfully"
+            };
         }
 
         [HttpPost("DeleteRole")]

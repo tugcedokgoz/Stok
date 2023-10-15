@@ -53,31 +53,7 @@ function SaveUser() {
         $("#userModal").modal("hide");
     });
 }
-//function SetUserIdforEditModal(id) {
-//    GetUsers();
-//    $("#EditUserId").val(parseInt(id))
 
-
-
-//}
-//function UpdateUser() {
-
-//    var user = {
-//        Id: $("#EditUserId").val(),
-//        UserFullName: $("#inputEdituserfullName").val(),
-//        UserEmail: $("#inputEdituserEmail").val(),
-//        Password: $("#inputEdituserPassword").val(),
-//        CompanyDepartmentId: $("#inputEditCompanyDepartmentName").val(),
-//        RoleId: $("#inputEditRole").val(),
-//        SuperiorId: $("#inputEditSuperiorName").val(),
-//    };
-
-//    Post("User/Save", user, (data) => {
-
-//        GetUsers();
-//        $("#userEditModal").modal("hide");
-//    });
-//}
 
 $(document).ready(function () {
     GetUsers();
@@ -86,10 +62,6 @@ $(document).ready(function () {
         event.preventDefault();
         SaveUser();
     });
-    //$("#userEditForm").submit(function (event) {
-    //    event.preventDefault();
-    //    UpdateProduct();
-    //});
 });
 
 function LoadSelectOptions() {
@@ -187,8 +159,3 @@ function LoadSuperiors() {
 
 
 
-
-
-//$(document).ready(function () {
-//    GetUsers();
-//});

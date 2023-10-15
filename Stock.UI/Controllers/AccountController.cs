@@ -59,6 +59,12 @@ namespace Stock.UI.Controllers
 
                     case "SatınAlma":
                         return RedirectToAction("Home", "Offer");
+
+                    case "Genel Müdür":
+                        return RedirectToAction("Home", "Manager");
+
+                    case "Yönetim Kurulu Başkanı":
+                        return RedirectToAction("Home", "BoardofDirector");
                     default:
                         // Diğer roller için varsayılan bir yönlendirme, örneğin kullanici sayfasına
                         return RedirectToAction("Home", "Kullanici");

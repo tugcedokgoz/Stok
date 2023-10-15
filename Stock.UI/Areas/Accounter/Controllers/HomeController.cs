@@ -9,7 +9,8 @@ namespace Stock.UI.Areas.Accounter.Controllers
         {
             return View();
         }
-        public IActionResult Request() => View();
+        public IActionResult Approved() => View();
         public IActionResult Stock() => View();
+        public IActionResult Bill() => View();
     }
 }

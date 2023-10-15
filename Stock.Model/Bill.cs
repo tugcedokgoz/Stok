@@ -20,5 +20,8 @@ namespace Stock.Model
         [ForeignKey("ProductId")]
         public Product Product { get; set; }
         public DateTime CreateDate { get; set; }
+        public int SupplierCompanyId { get; set; }
+        [ForeignKey("SupplierCompanyId")]
+        public SupplierCompany SupplierCompany { get; set; }
     }
 }

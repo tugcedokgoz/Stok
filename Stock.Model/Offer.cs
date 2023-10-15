@@ -15,10 +15,12 @@ namespace Stock.Model
         [ForeignKey("RequestId")]
         public Requests Requests { get; set; }
         public decimal OfferPrice { get; set; }
-        public bool Status { get; set; }
+        public bool? Status { get; set; }
         public int SupplierCompanyId { get; set; }
         [ForeignKey("SupplierCompanyId")]
         public SupplierCompany SupplierCompany { get; set; }
         public int Amount { get; set; }
+        public decimal UnitPrice { get; set; }
+        public DateTime? CreateDate { get; set; }
     }
 }

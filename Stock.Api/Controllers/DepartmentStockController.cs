@@ -56,7 +56,7 @@ namespace Stock.Api.Controllers
             {
 
                 success = true,
-                message = "Property saved successfully"
+                message = "Department saved successfully"
             };
 
         }

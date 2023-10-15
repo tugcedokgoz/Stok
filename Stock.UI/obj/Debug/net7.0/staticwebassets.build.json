@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4S0BSGZ6cbyYURwoHtnuVgsXF/+rC/FCBPvl+ojTTgc=",
+  "Hash": "78u9xcAL18s5Y48G01cB6KjKu2gFCWJWZZ3jZosYCHQ=",
   "Source": "Stock.UI",
   "BasePath": "_content/Stock.UI",
   "Mode": "Default",
@@ -34901,6 +34901,23 @@
       "OriginalItemSpec": "wwwroot\\js\\Accounter\\accounter.js"
     },
     {
+      "Identity": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Accounter\\bill.js",
+      "SourceId": "Stock.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\",
+      "BasePath": "_content/Stock.UI",
+      "RelativePath": "js/Accounter/bill.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Accounter\\bill.js"
+    },
+    {
       "Identity": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Admin\\company.js",
       "SourceId": "Stock.UI",
       "SourceType": "Discovered",
@@ -34984,6 +35001,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Admin\\user.js"
+    },
+    {
+      "Identity": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Director\\offer.js",
+      "SourceId": "Stock.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\",
+      "BasePath": "_content/Stock.UI",
+      "RelativePath": "js/Director/offer.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Director\\offer.js"
+    },
+    {
+      "Identity": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Manager\\offer.js",
+      "SourceId": "Stock.UI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\",
+      "BasePath": "_content/Stock.UI",
+      "RelativePath": "js/Manager/offer.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Manager\\offer.js"
     },
     {
       "Identity": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Offer\\offerProduct.js",

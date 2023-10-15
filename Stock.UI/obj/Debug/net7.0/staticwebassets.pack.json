@@ -8205,6 +8205,10 @@
       "PackagePath": "staticwebassets\\js\\Accounter\\accounter.js"
     },
     {
+      "Id": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Accounter\\bill.js",
+      "PackagePath": "staticwebassets\\js\\Accounter\\bill.js"
+    },
+    {
       "Id": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Admin\\company.js",
       "PackagePath": "staticwebassets\\js\\Admin\\company.js"
     },
@@ -8223,6 +8227,14 @@
     {
       "Id": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Admin\\user.js",
       "PackagePath": "staticwebassets\\js\\Admin\\user.js"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Director\\offer.js",
+      "PackagePath": "staticwebassets\\js\\Director\\offer.js"
+    },
+    {
+      "Id": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Manager\\offer.js",
+      "PackagePath": "staticwebassets\\js\\Manager\\offer.js"
     },
     {
       "Id": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.UI\\wwwroot\\js\\Offer\\offerProduct.js",

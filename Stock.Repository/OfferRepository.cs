@@ -21,7 +21,7 @@ namespace Stock.Repository
         {
             var offers = await _context.Offers
                 .Include(u => u.Requests)
-                .Include(u=>u.SupplierCompany)
+                .Include(u => u.SupplierCompany)
                 .ToListAsync();
 
             var offersDetail = offers.Select(offer => new
@@ -30,6 +30,8 @@ namespace Stock.Repository
                 offer.OfferPrice,
                 offer.Status,
                 offer.Amount,
+                offer.UnitPrice,
+                offer.CreateDate,
                 RequestStatus = offer.Requests != null ? offer.Requests.RequestStatus : null,
                 SupplierCompany = offer.SupplierCompany != null ? offer.SupplierCompany.SupplierCompanyName : null,
 
@@ -38,12 +40,6 @@ namespace Stock.Repository
             return offersDetail;
         }
 
-        //public Offer GetOfferById(int offerId)
-        //{
-        //    return FindByCondition(o => o.Id == offerId)
-        //        .Include(o => o.Requests)
-        //        .FirstOrDefault();
-        //}
 
     }
 }

@@ -22,8 +22,8 @@ namespace Stock.Api.Controllers
 
             if (companies == null || !companies.Any())
             {
-                // Şirket bulunamadığında NotFound yerine NoContent dönelim.
-                return NoContent();
+               
+                return Ok(companies == null ? "-" : companies);
             }
 
             return Ok(companies);

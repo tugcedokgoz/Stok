@@ -2,20 +2,22 @@
     Get("Request/GetRequestsByStatus/7", (data) => {
         var html = `<table class="table table-hover">` +
             `<tr>
+                <th>Talep Id</th>
                 <th>Kullanıcı Adı</th>
                 <th>Kategori Adı</th>
                 <th>Ürün Adı</th>
                 <th>Talep Durum</th>
                 <th>Talep Tarih</th>
                 <th>Adet</th>
-                <th>Teklifte Bulun</th>
-           
+                <th>Teklif</th>
+
             </tr>`;
 
         var arr = data;
         console.log(data);
         for (var i = 0; i < arr.length; i++) {
             html += `<tr>`;
+            html += `<td>${arr[i].id}</td>`;
             html += `<td>${arr[i].userFullName}</td>`;
             html += `<td>${arr[i].categoryName}</td>`;
             html += `<td>${arr[i].productName}</td>`;
@@ -25,6 +27,8 @@
             html += `<td class="d-flex flex-row">
             <button type="button" class="btn btn-success btn-sm m-2" data-bs-toggle="modal" data-bs-target="#userModal"
             onclick='setOfferId(${arr[i].id})'>Teklif Ver</button>
+              <button type="button" class="btn btn-danger btn-sm m-2" data-bs-toggle="modal" 
+            onclick='finishOffer()'>Teklifi Bitir</button>
             </td>`;
             html += `</tr>`;
         }
@@ -61,25 +65,66 @@ function LoadSupplier() {
                 text: supplier.supplierCompany.supplierCompanyName
             }));
         });
-
-
-        select.change(function () {
-            var selectedSupplierId = $(this).val();
-            if (selectedSupplierId) {
-                LoadSupplier(selectedSupplierId);
-            } else {
-                var categorySelect = $("#inputCategoryName");
-                categorySelect.empty();
-                categorySelect.append($('<option>', {
-                    value: "",
-                    text: "Kategori Seçiniz"
-                }));
-            }
-        });
     });
 }
 
+function setOfferId(offerId) {
+    document.getElementById("offerId").value = offerId;
+}
+
+function ManagerRequestStatus(requestId, status) {
+    $.ajax({
+        type: "POST",
+        url: `${BASE_API_URI}/Request/UpdateRequestStatus/${requestId}/${status}`,
+        dataType: "json",
+        contentType: "application/json; charset=utf-8",
+        success: function (data) {
+            alert("Talep Başarıyla Reddedildi");
+            location.reload();
+        },
+        error: function (XMLHttpRequest, textStatus, errorThrown) {
+            console.log(XMLHttpRequest + "-" + textStatus + "-" + errorThrown);
+        }
+    });
+}
+function finishOffer() {
+    var offerData = {
+        RequestId: $("#offerId").val(),
+        OfferPrice: $("#inputOffer").val(),
+    }
+    if (parseInt(offerData.OfferPrice) <= 5000)
+        ManagerRequestStatus(offerData.RequestId, 8);
+    else
+        ManagerRequestStatus(offerData.RequestId, 11);
+}
 $(document).ready(function () {
     GetRequest();
     LoadSelectOptions();
+
+    document.querySelectorAll(".btn-success").forEach(function (button) {
+        button.addEventListener("click", function () {
+            const offerId = button.getAttribute("data-offer-id");
+            setOfferId(offerId);
+        });
+    })
+    // Teklif formunu gönderme işlevi
+    $("#userForm").submit(function (e) {
+        e.preventDefault();
+
+        var offerData = {
+            RequestId: $("#offerId").val(),
+            OfferPrice: $("#inputOffer").val(),
+            Amount: $("#inputAmount").val(),
+            UnitPrice: $("#inputUnitPrice").val(),
+            SupplierCompanyId: $("#inputSupplierName").val()
+        };
+
+        Post("Offer/Save", offerData, (data) => {
+            GetRequest();
+            $("#userModal").modal("hide");
+            alert("Teklif başarıyla kaydedildi");
+        });
+
+    });
+
 });

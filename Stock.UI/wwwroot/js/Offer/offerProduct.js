@@ -5,6 +5,8 @@
                 <th>Tedarikçi Şirket Adı</th>
                 <th>Kategori Adı</th>
                 <th>Ürün Adı</th>
+                <th>Ürün Fiyat</th>
+
 
            
             </tr>`;
@@ -16,6 +18,7 @@
             html += `<td>${arr[i].supplierCompany.supplierCompanyName}</td>`;
             html += `<td>${arr[i].product.category.categoryName}</td>`;
             html += `<td>${arr[i].product.productName}</td>`;
+            html += `<td>${arr[i].price}</td>`;
             html += `<td class="d-flex flex-row">
                       
                       </td>`;

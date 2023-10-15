@@ -20,6 +20,7 @@ namespace Stock.Repository
             var bill = await _context.Bills
                 .Include(b => b.Category)
                 .Include(b => b.Product)
+                .Include(b => b.SupplierCompany)
                 .ToListAsync();
             var billDetails = bill.Select(bill => new
             {
@@ -28,6 +29,7 @@ namespace Stock.Repository
                 bill.Amount,
                 bill.CreateDate,
                 CategoryName = bill.Category != null ? bill.Category.CategoryName : null,
+                SupplierCompany = bill.SupplierCompany != null ? bill.SupplierCompany.SupplierCompanyName : null,
                 ProductName = bill.Product != null ? bill.Product.ProductName : null,
             });
             return billDetails;

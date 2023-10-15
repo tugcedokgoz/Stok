@@ -12,11 +12,7 @@
             html += `<td>${arr[i].companyName}</td>`;
             html += `<td>${arr[i].departmentName}</td>`;
             //html += `<td><i class="fa fa-trash text-danger" onclick='DeleteRole(${arr[i].id})'></i><i class="fa-pencil-square" onclick='EditRole(${arr[i]})'></i></td>`;
-            html += `<td>
-                                     <button type="button" class="btn btn-danger"  onclick='DeleteRole(${arr[i].id})'>Delete</button>
-                                     &nbsp;
-                                     <button type="button" class="btn btn-warning"  data-bs-toggle="modal" data-bs-target="#roleEditModal" onclick='SetRoleIdforEditModal(${arr[i].id})'>Edit</button>
-                             </td>`;
+          
             html += `</tr>`
         }
         html += `</table>`;
