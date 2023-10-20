@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AigIaTvUMWz0xcUHqEoAKPmQ4OokaCYnLJmw6lNkPwdSaguhOjou7dsP/uG1hkpzlDl1qUn/7pLD2irTm7nuxA==",
+  "dgSpecHash": "eVvmjLX+yOnAvPRv6yI++tlJQJPpcqdXwuFiBVbIUBycoDaBtaqh8T8oq8cfm1M/2oejtS6kfSvB3aaKdTPpZw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tugcedokgoz\\OneDrive\\Masaüstü\\stokclone\\Stok\\Stock.Model\\Stock.Model.csproj",
+  "projectFilePath": "C:\\Users\\tugcedokgoz\\Desktop\\stok\\clone\\Stok\\Stock.Model\\Stock.Model.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\tugcedokgoz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",

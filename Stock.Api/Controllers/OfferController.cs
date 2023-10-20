@@ -117,6 +117,7 @@ namespace Stock.Api.Controllers
                 {
                     OfferId = offer.Id,
                     ProductName = offer.Requests.Product.ProductName,
+                    //DepartmanName=offer.Requests.User.CompanyDepartment.DepartmentName,
                     //CategoryName = offer.Requests.Product.CategoryId,
                     SupplierCompanyName = offer.SupplierCompany.SupplierCompanyName,
                     offer.OfferPrice,

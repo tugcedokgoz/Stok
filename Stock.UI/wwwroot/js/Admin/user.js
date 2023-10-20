@@ -26,7 +26,7 @@ function GetUsers() {
             html += `<td>${arr[i].superiorName}</td>`;
             html += `<td class="d-flex flex-row">
                         <button type="button" class="btn btn-danger btn-sm m-2" onclick='DeleteUser(${arr[i].id})'>Delete</button>
-                      /*  <button type="button" class="btn btn-warning btn-sm m-2" data-bs-toggle="modal" data-bs-target="#userEditModal" onclick='SetUserIdforEditModal(${arr[i].id})'>Edit</button>*/
+                       <button type="button" class="btn btn-warning btn-sm m-2" data-bs-toggle="modal" data-bs-target="#userEditModal" onclick='SetUserIdforEditModal(${arr[i].id})'>Edit</button>
                       </td>`;
             html += `</tr>`;
         }

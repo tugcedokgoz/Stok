@@ -9,6 +9,7 @@ namespace Stock.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class BillController : BaseController
     {
         public BillController(RepositoryWrapper repo, IMemoryCache cache) : base(repo, cache)

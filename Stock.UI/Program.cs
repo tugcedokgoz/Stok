@@ -26,6 +26,7 @@ app.UseRouting();
 
 // Session'ý kullanabilmek için bu satýrý ekleyin
 app.UseSession();
+//app.UseAuthorization();
 
 app.UseAuthorization();
 

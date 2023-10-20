@@ -1,0 +1,28 @@
+2023-10-18 13:30:01.2870||INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\tugcedokgoz\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest. 
+2023-10-18 13:30:01.9712||INFO|Microsoft.Hosting.Lifetime|Now listening on: https://localhost:7177 
+2023-10-18 13:30:01.9712||INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5255 
+2023-10-18 13:30:02.0005||INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down. 
+2023-10-18 13:30:02.0005||INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development 
+2023-10-18 13:30:02.0198||INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\tugcedokgoz\Desktop\stok\clone\Stok\Stock.Api 
+2023-10-18 13:30:03.4659||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger - - 
+2023-10-18 13:30:03.8964||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger - - - 301 0 - 436.5587ms 
+2023-10-18 13:30:03.9145||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/index.html - - 
+2023-10-18 13:30:04.6541||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/index.html - - - 200 - text/html;charset=utf-8 739.5874ms 
+2023-10-18 13:30:04.6652||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/swagger-ui.css - - 
+2023-10-18 13:30:04.6652||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/swagger-ui-bundle.js - - 
+2023-10-18 13:30:04.6652||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - 
+2023-10-18 13:30:04.6652||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/swagger-ui-standalone-preset.js - - 
+2023-10-18 13:30:04.6652||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/_vs/browserLink - - 
+2023-10-18 13:30:04.7653||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_framework/aspnetcore-browser-refresh.js - - - 200 12350 application/javascript;+charset=utf-8 98.3419ms 
+2023-10-18 13:30:04.8557||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2023-10-18 13:30:04.8557||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/swagger-ui.css - - - 200 144929 text/css 191.7269ms 
+2023-10-18 13:30:04.8766||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2023-10-18 13:30:04.8766||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/swagger-ui-standalone-preset.js - - - 200 312163 text/javascript 212.2118ms 
+2023-10-18 13:30:04.9250||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 256.1660ms 
+2023-10-18 13:30:04.9427||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2023-10-18 13:30:04.9427||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/swagger-ui-bundle.js - - - 200 1061536 text/javascript 277.0880ms 
+2023-10-18 13:30:05.4013||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - 
+2023-10-18 13:30:05.5074||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request starting HTTP/2 GET https://localhost:7177/swagger/favicon-32x32.png - - 
+2023-10-18 13:30:05.5074||INFO|Microsoft.AspNetCore.StaticFiles.StaticFileMiddleware|Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2023-10-18 13:30:05.5074||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/favicon-32x32.png - - - 200 628 image/png 3.4119ms 
+2023-10-18 13:30:05.8127||INFO|Microsoft.AspNetCore.Hosting.Diagnostics|Request finished HTTP/2 GET https://localhost:7177/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 411.5168ms 

@@ -37,9 +37,6 @@ namespace Stock.Api.Controllers
                 DepartmentId = json.DepartmentId,
                 ProductId = json.ProductId,
                 Amount = json.Amount,
-
-
-
             };
             if (departmentProductStock.Id > 0)
             {

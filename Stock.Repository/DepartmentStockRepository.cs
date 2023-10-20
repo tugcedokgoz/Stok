@@ -18,6 +18,7 @@ namespace Stock.Repository
         }
         public async Task<IEnumerable<object>> GetDepartmentStockAsync()
         {
+
             var departmentStock = await _context.DepartmentProductStocks
             .Include(ds => ds.CompanyDepartment.Company)
             .Include(ds => ds.Product.Category)
